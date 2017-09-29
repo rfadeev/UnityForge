@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 namespace UnityForgeEditor
 {
@@ -7,6 +8,7 @@ namespace UnityForgeEditor
         private static readonly Color LIST_ITEM_SELECTED_COLOR = new Color(0.6f, 0.6f, 1.0f, 0.5f);
 
         public static GUIStyle BoxStyle { get { return GUI.skin.box; } }
+        public static GUIStyle BoldLabel { get { return EditorStyles.boldLabel; } }
         public static GUIStyle ListItemStyle { get; private set; }
         public static GUIStyle ListItemSelectedStyle { get; private set; }
 
